@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ValifySelfie'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'ValifySelfie for take selfie with one face in camera'
   
   # This description is used to generate tags and improve search results.
@@ -30,7 +30,7 @@ Pod::Spec.new do |s|
   
   s.ios.deployment_target = '13.6'
   
-  s.source_files = 'Source/**/*.swift'
+  s.source_files = 'Source/**/*'
   
   # s.resource_bundles = {
   #   'ValifySelfie' => ['ValifySelfie/Assets/*.png']
