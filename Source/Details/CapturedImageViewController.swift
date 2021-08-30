@@ -27,7 +27,7 @@ class CapturedImageViewController: UIViewController {
   
   init(image: UIImage) {
     self.image = image
-    super.init(nibName: "CapturedImageViewController", bundle: Bundle(for: type(of: self)))
+    super.init(nibName: "CapturedImageViewController", bundle: Bundle(for: CapturedImageViewController.self))
   }
   
   required init?(coder: NSCoder) {
