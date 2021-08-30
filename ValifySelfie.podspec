@@ -30,7 +30,7 @@ Pod::Spec.new do |s|
   
   s.ios.deployment_target = '13.6'
   
-  s.source_files = 'ValifySelfie/Source/**/*'
+  s.source_files = 'Source/**/*.swift'
   
   # s.resource_bundles = {
   #   'ValifySelfie' => ['ValifySelfie/Assets/*.png']
