@@ -1,0 +1,22 @@
+{
+  "name": "ValifySelfie",
+  "version": "0.1.0",
+  "summary": "A short description of ValifySelfie.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/mkornyali/ValifySelfie",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "mkornyali": "mohammed.korany.ali@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/mkornyali/ValifySelfie.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "ValifySelfie/Classes/**/*"
+}

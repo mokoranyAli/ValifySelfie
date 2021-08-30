@@ -28,7 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		095DC9C4681FE271C6092D81 /* ValifySelfie.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = ValifySelfie.podspec; path = ../ValifySelfie.podspec; sourceTree = "<group>"; };
+		095DC9C4681FE271C6092D81 /* ValifySelfie.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ValifySelfie.podspec; path = ../ValifySelfie.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		0B214EF07D582AD604388070 /* Pods_ValifySelfie_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ValifySelfie_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3861C593945E3E9089977899 /* Pods-ValifySelfie_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ValifySelfie_Example.release.xcconfig"; path = "Target Support Files/Pods-ValifySelfie_Example/Pods-ValifySelfie_Example.release.xcconfig"; sourceTree = "<group>"; };
 		48A35FFC2DD81FC55209432B /* Pods-ValifySelfie_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ValifySelfie_Tests.release.xcconfig"; path = "Target Support Files/Pods-ValifySelfie_Tests/Pods-ValifySelfie_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -42,8 +42,8 @@
 		607FACE51AFB9204008FA782 /* ValifySelfie_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ValifySelfie_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		75037EBED49297CA796CA004 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		943F67E433E0CC7765EC73FF /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		75037EBED49297CA796CA004 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		943F67E433E0CC7765EC73FF /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		BA503AA8F04AC88100C9C2D0 /* Pods-ValifySelfie_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ValifySelfie_Tests.debug.xcconfig"; path = "Target Support Files/Pods-ValifySelfie_Tests/Pods-ValifySelfie_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		EE20919E38674C3B8D7594AD /* Pods_ValifySelfie_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ValifySelfie_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8E2CC5A6FC176014268B16D /* Pods-ValifySelfie_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ValifySelfie_Example.debug.xcconfig"; path = "Target Support Files/Pods-ValifySelfie_Example/Pods-ValifySelfie_Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -77,7 +77,6 @@
 				BA503AA8F04AC88100C9C2D0 /* Pods-ValifySelfie_Tests.debug.xcconfig */,
 				48A35FFC2DD81FC55209432B /* Pods-ValifySelfie_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -227,6 +226,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);

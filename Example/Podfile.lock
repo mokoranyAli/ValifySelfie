@@ -1,0 +1,16 @@
+PODS:
+  - ValifySelfie (0.1.0)
+
+DEPENDENCIES:
+  - ValifySelfie (from `../`)
+
+EXTERNAL SOURCES:
+  ValifySelfie:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  ValifySelfie: 47686a155a061bea675b90af05619786d5263cfa
+
+PODFILE CHECKSUM: e9dda1b4cc7c822b80a1879a435a730413e6f8bd
+
+COCOAPODS: 1.10.1
