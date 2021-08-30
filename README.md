@@ -5,6 +5,8 @@
 [![License](https://img.shields.io/cocoapods/l/ValifySelfie.svg?style=flat)](https://cocoapods.org/pods/ValifySelfie)
 [![Platform](https://img.shields.io/cocoapods/p/ValifySelfie.svg?style=flat)](https://cocoapods.org/pods/ValifySelfie)
 
+This pod for Valify company task, This a framework allows end developer to open camera and make user take selfie picture with spcific terms like only one face should be in camera 
+
 ## Screenshots
 ![300E472C-A3EA-43E5-A983-D0EFD7351FEA](https://user-images.githubusercontent.com/45698820/131361501-7eb825cd-a881-4d69-93ce-0d0aa27bf64e.jpg)
 ![5026D392-BC3E-42AF-A221-1BA84A59047D](https://user-images.githubusercontent.com/45698820/131361511-1adc97e8-2255-4002-b350-935b4d2bb372.jpg)
