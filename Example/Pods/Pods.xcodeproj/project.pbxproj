@@ -11,10 +11,15 @@
 		08EA292F916D431BBCFAEBB4D199294C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		0F979FD7B880C42FC104EA65DAA613A0 /* Pods-ValifySelfie_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 182977343021B3AD640DF405B9F014C2 /* Pods-ValifySelfie_Example-dummy.m */; };
 		28D4AE861EC7FF5D9A960E6EF2BC0AD2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		44197DDB7CAC68A64ECDBE31C719AEE1 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3731845FF52AC92D890274493ECE79 /* ReplaceMe.swift */; };
 		59D33D4362420FD7517E4B14E31FEDDD /* Pods-ValifySelfie_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 588DB16BAB00CB79CBF519F658EB779B /* Pods-ValifySelfie_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7F6A24551FC2654B9085219375F5EE42 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		8A666EFC042EA41E006BD4FD2EB26E1F /* ValifySelfie-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D4F0FA994D5C59ECF82DDD0D1312E594 /* ValifySelfie-dummy.m */; };
+		A2CA2C0D26DCF0BF0024537D /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2CA2C0526DCF0BF0024537D /* CameraViewController.swift */; };
+		A2CA2C0E26DCF0BF0024537D /* EntryPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2CA2C0726DCF0BF0024537D /* EntryPoint.swift */; };
+		A2CA2C0F26DCF0BF0024537D /* ValifySelfieDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2CA2C0926DCF0BF0024537D /* ValifySelfieDelegate.swift */; };
+		A2CA2C1026DCF0BF0024537D /* CapturedImageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2CA2C0B26DCF0BF0024537D /* CapturedImageViewController.xib */; };
+		A2CA2C1126DCF0BF0024537D /* CapturedImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2CA2C0C26DCF0BF0024537D /* CapturedImageViewController.swift */; };
+		A2CA2C1926DCF0CD0024537D /* UIViewController+Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2CA2C1826DCF0CD0024537D /* UIViewController+Toast.swift */; };
 		F5712429CD66A619D23770E6F9650EF6 /* ValifySelfie-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AC58408A7102E36DFEF77D0CA967F5CB /* ValifySelfie-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F859FA3F765A96446EC26BE47608B001 /* Pods-ValifySelfie_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C4FBBFC582CF98B13204E8A4EF36FCCD /* Pods-ValifySelfie_Tests-dummy.m */; };
 /* End PBXBuildFile section */
@@ -48,28 +53,33 @@
 		5F7AA98ABCBABDA20A1360AF231E5376 /* ValifySelfie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ValifySelfie.debug.xcconfig; sourceTree = "<group>"; };
 		61AB6EC50C853BB946E356C5D6FED70D /* Pods-ValifySelfie_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ValifySelfie_Example.release.xcconfig"; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		7B61BBAF237F2C8325011F13739CAF2A /* ValifySelfie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ValifySelfie.framework; path = ValifySelfie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7E570BA853FCA2ADE236DE4BA821E947 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		7B61BBAF237F2C8325011F13739CAF2A /* ValifySelfie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ValifySelfie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E570BA853FCA2ADE236DE4BA821E947 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		885C7AD96586EAB0CC68CB2D76008478 /* Pods-ValifySelfie_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ValifySelfie_Example-frameworks.sh"; sourceTree = "<group>"; };
 		901EFA102E3926906E9835E0F3E94024 /* Pods-ValifySelfie_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ValifySelfie_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		929BBB30D8A590F5572AAD0399972393 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		929BBB30D8A590F5572AAD0399972393 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		950D33EAF3A8820D5040DED1DB02327F /* Pods-ValifySelfie_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ValifySelfie_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		987E6552FCDE9C37423D4B82AF880E9F /* Pods-ValifySelfie_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ValifySelfie_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		98E43DE733EED0DD750B4242FCF76B94 /* ValifySelfie-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ValifySelfie-Info.plist"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A2CA2C0526DCF0BF0024537D /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		A2CA2C0726DCF0BF0024537D /* EntryPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryPoint.swift; sourceTree = "<group>"; };
+		A2CA2C0926DCF0BF0024537D /* ValifySelfieDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValifySelfieDelegate.swift; sourceTree = "<group>"; };
+		A2CA2C0B26DCF0BF0024537D /* CapturedImageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CapturedImageViewController.xib; sourceTree = "<group>"; };
+		A2CA2C0C26DCF0BF0024537D /* CapturedImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CapturedImageViewController.swift; sourceTree = "<group>"; };
+		A2CA2C1826DCF0CD0024537D /* UIViewController+Toast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Toast.swift"; sourceTree = "<group>"; };
 		AC58408A7102E36DFEF77D0CA967F5CB /* ValifySelfie-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ValifySelfie-umbrella.h"; sourceTree = "<group>"; };
 		B3322E1C7516C9F4BF41E020FEE79A7E /* Pods-ValifySelfie_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ValifySelfie_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		B4B61729E8EE0DCED41ECE3706B0EF90 /* Pods-ValifySelfie_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ValifySelfie_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		BF5C7CA1ED2DE4C9AB045FF8582AF0CF /* Pods-ValifySelfie_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ValifySelfie_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		C3F8CD0655E8C5F5391610A237DD7ED6 /* Pods_ValifySelfie_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ValifySelfie_Tests.framework; path = "Pods-ValifySelfie_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3F8CD0655E8C5F5391610A237DD7ED6 /* Pods_ValifySelfie_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ValifySelfie_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4FBBFC582CF98B13204E8A4EF36FCCD /* Pods-ValifySelfie_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ValifySelfie_Tests-dummy.m"; sourceTree = "<group>"; };
 		C58018B82CBFD93C2948416A9551057B /* Pods-ValifySelfie_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ValifySelfie_Tests-Info.plist"; sourceTree = "<group>"; };
-		C61B2E3AE6CB2083205D365A854D24A7 /* ValifySelfie.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = ValifySelfie.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C61B2E3AE6CB2083205D365A854D24A7 /* ValifySelfie.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = ValifySelfie.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		CDAB99360DA241A436FD01BE34EA9082 /* Pods-ValifySelfie_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ValifySelfie_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		D4F0FA994D5C59ECF82DDD0D1312E594 /* ValifySelfie-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ValifySelfie-dummy.m"; sourceTree = "<group>"; };
 		ECBF30A284C951C32022C8B2BDA89D63 /* Pods-ValifySelfie_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ValifySelfie_Tests-umbrella.h"; sourceTree = "<group>"; };
-		EF3731845FF52AC92D890274493ECE79 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = ValifySelfie/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
-		FEBABD181792433E8EBC9BDF0271C79A /* Pods_ValifySelfie_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ValifySelfie_Example.framework; path = "Pods-ValifySelfie_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEBABD181792433E8EBC9BDF0271C79A /* Pods_ValifySelfie_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ValifySelfie_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,7 +130,7 @@
 		1B5812722102F8CB48E191F062368713 /* ValifySelfie */ = {
 			isa = PBXGroup;
 			children = (
-				EF3731845FF52AC92D890274493ECE79 /* ReplaceMe.swift */,
+				A2CA2C0326DCF07E0024537D /* Source */,
 				5059DA0BEE23022A7F704B46423B4857 /* Pod */,
 				AC9C2B5F6B68C9C5E2444E5915E2D86F /* Support Files */,
 			);
@@ -152,6 +162,59 @@
 				1B5812722102F8CB48E191F062368713 /* ValifySelfie */,
 			);
 			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		A2CA2C0326DCF07E0024537D /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				A2CA2C1726DCF0CD0024537D /* Extension */,
+				A2CA2C0426DCF0BF0024537D /* Camera */,
+				A2CA2C0826DCF0BF0024537D /* Delegate */,
+				A2CA2C0A26DCF0BF0024537D /* Details */,
+				A2CA2C0626DCF0BF0024537D /* EntryPoint */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		A2CA2C0426DCF0BF0024537D /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				A2CA2C0526DCF0BF0024537D /* CameraViewController.swift */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		A2CA2C0626DCF0BF0024537D /* EntryPoint */ = {
+			isa = PBXGroup;
+			children = (
+				A2CA2C0726DCF0BF0024537D /* EntryPoint.swift */,
+			);
+			path = EntryPoint;
+			sourceTree = "<group>";
+		};
+		A2CA2C0826DCF0BF0024537D /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				A2CA2C0926DCF0BF0024537D /* ValifySelfieDelegate.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		A2CA2C0A26DCF0BF0024537D /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				A2CA2C0B26DCF0BF0024537D /* CapturedImageViewController.xib */,
+				A2CA2C0C26DCF0BF0024537D /* CapturedImageViewController.swift */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		A2CA2C1726DCF0CD0024537D /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A2CA2C1826DCF0CD0024537D /* UIViewController+Toast.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		A969F430F985549F5EF33057B0A09D5D /* Products */ = {
@@ -317,6 +380,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
 				LastUpgradeCheck = 1100;
+				TargetAttributes = {
+					7ED8790897966174E4A64781F2C677BF = {
+						LastSwiftMigration = 1240;
+					};
+				};
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -357,6 +425,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2CA2C1026DCF0BF0024537D /* CapturedImageViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -367,8 +436,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				44197DDB7CAC68A64ECDBE31C719AEE1 /* ReplaceMe.swift in Sources */,
 				8A666EFC042EA41E006BD4FD2EB26E1F /* ValifySelfie-dummy.m in Sources */,
+				A2CA2C1126DCF0BF0024537D /* CapturedImageViewController.swift in Sources */,
+				A2CA2C0E26DCF0BF0024537D /* EntryPoint.swift in Sources */,
+				A2CA2C0D26DCF0BF0024537D /* CameraViewController.swift in Sources */,
+				A2CA2C1926DCF0CD0024537D /* UIViewController+Toast.swift in Sources */,
+				A2CA2C0F26DCF0BF0024537D /* ValifySelfieDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -459,7 +532,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -487,7 +560,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-ValifySelfie_Example/Pods-ValifySelfie_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-ValifySelfie_Example/Pods-ValifySelfie_Example.modulemap";
@@ -520,7 +593,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/ValifySelfie/ValifySelfie-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/ValifySelfie/ValifySelfie-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/ValifySelfie/ValifySelfie.modulemap";
 				PRODUCT_MODULE_NAME = ValifySelfie;
@@ -528,7 +601,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -551,7 +624,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-ValifySelfie_Tests/Pods-ValifySelfie_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-ValifySelfie_Tests/Pods-ValifySelfie_Tests.modulemap";
@@ -584,7 +657,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-ValifySelfie_Tests/Pods-ValifySelfie_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-ValifySelfie_Tests/Pods-ValifySelfie_Tests.modulemap";
@@ -616,7 +689,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-ValifySelfie_Example/Pods-ValifySelfie_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-ValifySelfie_Example/Pods-ValifySelfie_Example.modulemap";
@@ -683,13 +756,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -710,7 +782,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/ValifySelfie/ValifySelfie-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/ValifySelfie/ValifySelfie-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/ValifySelfie/ValifySelfie.modulemap";
 				PRODUCT_MODULE_NAME = ValifySelfie;
@@ -718,7 +790,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
