@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ValifySelfie'
-  s.version          = '0.1.0(2)'
+  s.version          = '0.1.0'
   s.summary          = 'ValifySelfie for take selfie with one face in camera'
   
   # This description is used to generate tags and improve search results.
