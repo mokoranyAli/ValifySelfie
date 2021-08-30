@@ -22,7 +22,7 @@ pod 'ValifySelfie'
 
 ## Author
 
-mkornyali, mohammed.korany.ali@gmail.com
+mokoranyali, mohammed.korany.ali@gmail.com
 
 ## License
 
